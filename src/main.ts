@@ -9,7 +9,7 @@ async function bootstrap() {
     cors: {
       origin: [
         'http://localhost:3000',
-        'https://frontend-cripto-portfolio.onrender.com',
+        'https://frontend-portfolio-pi.vercel.app',
       ],
     },
   });
