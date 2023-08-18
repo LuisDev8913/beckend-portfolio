@@ -1,23 +1,23 @@
-import { Column, HasMany, Model, Table } from "sequelize-typescript";
-import { Watchlist } from "../../watchlist/models/watchlist.model";
+import { Column, HasMany, Model, Table } from 'sequelize-typescript';
+import { Watchlist } from '../../watchlist/models/watchlist.model';
 
 @Table
-export class User extends Model{
+export class User extends Model {
   @Column
-  firstName: string
+  firstName: string;
 
   @Column
-  username: string
+  username: string;
 
   @Column
-  email: string
+  email: string;
 
   @Column
-  password: string
+  password: string;
 
   @HasMany(() => Watchlist, {
     onDelete: 'CASCADE',
-    onUpdate: 'CASCADE'
+    onUpdate: 'CASCADE',
   })
-  watchlist: Watchlist[]
+  watchlist: Watchlist[];
 }

@@ -1,42 +1,42 @@
-import { IsNumber, IsString } from "class-validator";
-import { ApiProperty } from "@nestjs/swagger";
+import { IsNumber, IsString } from 'class-validator';
+import { ApiProperty } from '@nestjs/swagger';
 
 export class CreateAssetResponse {
   @ApiProperty()
   @IsNumber()
-  user: number
+  user: number;
 
   @ApiProperty()
   @IsString()
-  name: string
+  name: string;
 
   @ApiProperty()
   @IsString()
-  assetId: string
+  assetId: string;
 }
 
 export class GetUserAssetsResponse {
   @ApiProperty()
   @IsNumber()
-  id: number
+  id: number;
 
   @ApiProperty()
   @IsString()
-  name: string
+  name: string;
 
   @ApiProperty()
   @IsString()
-  assetId: string
+  assetId: string;
 
   @ApiProperty()
   @IsString()
-  createdAt: string
+  createdAt: string;
 
   @ApiProperty()
   @IsString()
-  updatedAt: string
+  updatedAt: string;
 
   @ApiProperty()
   @IsNumber()
-  user: number
+  user: number;
 }
